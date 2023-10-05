@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Potato</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="days-container">
             <div class="days">
-                <img src="images/potato8.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato8.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Monday</span>
                     <div class="subject">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="days">
-                <img src="images/potato7.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato7.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Tuesday</span>
                     <div class="subject">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="days">
-                <img src="images/potato3.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato3.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Wednesday</span>
                     <div class="subject">
@@ -59,7 +59,7 @@
             </div>
 
             <div class="days">
-                <img src="images/potato4.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato4.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Thursday</span>
                     <div class="subject">
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="days">
-                <img src="images/potato5.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato5.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Friday</span>
                     <div class="subject">
@@ -91,7 +91,7 @@
             </div>
 
             <div class="days">
-                <img src="images/potato6.jpg" alt="">
+                <img src="{{ url_for('static', filename='images/potato6.jpg') }}" alt="">
                 <div class="subjects">
                     <span>Saturday</span>
                     <div class="subject">
@@ -116,7 +116,7 @@
     </div>
 
     <audio id="audio" controls autoplay>
-        <source src="music/BeautifulScars.mp3" type="audio/ogg">
+        <source src="{{ url_for('static', filename='music/BeautifulScars.mp3') }}" type="audio/ogg">
     </audio>
 
 </body>
